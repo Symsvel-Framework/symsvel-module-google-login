@@ -1,0 +1,15 @@
+{
+    "schema": 1,
+    "name": "GoogleLogin",
+    "dependencies": {},
+    "tables": [],
+    "components": {
+        "back": "back",
+        "app": "app"
+    },
+    "documentation": {
+        "dev": "docs/dev",
+        "user": "docs/user"
+    },
+    "extensions": []
+}

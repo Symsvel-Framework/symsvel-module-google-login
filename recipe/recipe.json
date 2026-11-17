@@ -1,0 +1,30 @@
+{
+    "manifests": {
+        "symsvel-framework/module-google-login": {
+            "manifest": {
+                "bundles": {
+                    "SymSvel\\Module\\GoogleLogin\\GoogleLoginBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/google-login.yaml": {
+                    "contents": [
+                        "google-login:",
+                        "    resource:",
+                        "        path: '@GoogleLoginBundle/src/Controller/'",
+                        "        namespace: SymSvel\\Module\\GoogleLogin\\Controller",
+                        "    type: attribute",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "REPLACE_WITH_RECIPE_COMMIT_SHA"
+        }
+    }
+}
