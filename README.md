@@ -10,6 +10,12 @@ Module SymSvel (manifest schema 1).
 
 ---
 
+## Intégration continue GitHub-hosted (22/11/2026)
+
+La QA active de ce dépôt public (`.github/workflows/qa.yml`) utilise **GitHub-hosted Ubuntu 24.04** (`ubuntu-latest`), et non les runners Docker du mainteneur. Le workflow utilisait déjà GitHub-hosted ; il reste sur Ubuntu avec PHP 8.4 et ses tests Composer.
+
+Les runners locaux sont réservés aux dépôts privés `symsvel-packages` et `symsvel-recipes`. Les crash-tests restent distincts de la CI.
+
 ## Licence MIT et contributions
 
 Ce dépôt est distribué sous [licence MIT](LICENSE). Le code peut être utilisé, modifié et redistribué, y compris dans des projets commerciaux ou propriétaires, dans les conditions de cette licence (notamment la conservation de la notice de copyright et de licence).
